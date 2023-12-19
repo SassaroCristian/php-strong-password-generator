@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container mt-5">
-    <h1>Password Generator</h1>
+    <h2>Password Generator</h2>
     
     <form action="password.php" method="post">
         <div class="form-group">
