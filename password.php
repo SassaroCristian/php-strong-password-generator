@@ -2,7 +2,7 @@
 $passwordLength = $_POST['passwordLength'];
 
  function generatePassword($passwordLength) {
-    $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.£$&?^';
+    $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.';
     $password = '';
     for ($i=0; $i<=$passwordLength; $i++) {
         $index = mt_rand(0, strlen($characters)-1);
