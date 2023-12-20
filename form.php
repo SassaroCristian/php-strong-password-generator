@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Document</title>
+    <title>Password Generator</title>
 </head>
 <body>
 <div class="container mt-5">
@@ -14,9 +14,27 @@
     <form action="password.php" method="post">
         <div class="form-group">
             <label for="passwordLength">Password Length:</label>
-            <input type="number" class="form-control" id="passwordLength" name="passwordLength" min="8" required>
+            <input type="number" class="form-control" id="passwordLength" name="passwordLength" min="8"  required>
         </div>
-        
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="includeNumbers" name="includeNumbers" checked>
+            <label class="form-check-label" for="includeNumbers">Include Numbers</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="includeLetters" name="includeLetters" checked>
+            <label class="form-check-label" for="includeLetters">Include Letters</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="includeSymbols" name="includeSymbols" checked>
+            <label class="form-check-label" for="includeSymbols">Include Symbols</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="includeRepetedCharacters" name="includeRepetedCharacters" checked>
+            <label class="form-check-label" for="includeRepetedCharacters">Include repeted characters</label>
+        </div>
         <button type="submit" class="btn btn-primary">Generate Password</button>
     </form>
 </div>
